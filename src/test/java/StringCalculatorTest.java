@@ -19,4 +19,16 @@ public class StringCalculatorTest {
         int result = calculator.add("3");
         Assert.assertEquals(3, result);
     }
+
+    @Test public void oneAndTwoReturnsThree() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1,2");
+        Assert.assertEquals(3, result);
+    }
+
+    @Test public void threeAndFiveReturnEight() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("3,5");
+        Assert.assertEquals(8, result);
+    }
 }
