@@ -1,11 +1,10 @@
 public class StringCalculator {
 
     public int add(String s) {
-        if(s.contains(","))
-        {
-            int a, b;
-            a = Integer.parseInt(s.split(",")[0]);
-            b = Integer.parseInt(s.split(",")[1]);
+        if (s.contains(",")) {
+            String[] split = s.split(",");
+            int a = Integer.parseInt(split[0]);
+            int b = Integer.parseInt(split[1]);
             return a + b;
         }
         try {
