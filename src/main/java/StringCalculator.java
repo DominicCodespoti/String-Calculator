@@ -1,6 +1,10 @@
 public class StringCalculator {
 
     public int add(String s) {
-        return 0;
+        try {
+            return Integer.parseInt(s);
+        } catch (NumberFormatException e) {
+            return 0;
+        }
     }
 }

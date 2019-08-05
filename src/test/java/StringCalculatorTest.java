@@ -7,4 +7,16 @@ public class StringCalculatorTest {
         int result = calculator.add("");
         Assert.assertEquals(0, result);
     }
+
+    @Test public void oneReturnsOne() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1");
+        Assert.assertEquals(1, result);
+    }
+
+    @Test public void threeReturnsThree() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("3");
+        Assert.assertEquals(3, result);
+    }
 }
