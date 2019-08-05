@@ -2,7 +2,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class StringCalculatorTest {
-    @Test public void takesAStringAndReturnsANumber() {
+    @Test public void emptyStringReturnsZero() {
         StringCalculator calculator = new StringCalculator();
         int result = calculator.add("");
         Assert.assertEquals(0, result);
