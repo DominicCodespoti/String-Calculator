@@ -2,6 +2,12 @@ import java.util.regex.Pattern;
 
 public class StringCalculator {
 
+    public String enclose(String target)
+    {
+        target = "\\Q" + target + "\\E";
+        return target;
+    }
+
     public int add(String s) {
         if (s.equals(""))
             return 0;
@@ -14,10 +20,18 @@ public class StringCalculator {
         if (s.contains("//")) {
             if (s.contains("["))
             {
-                delimiter = s.substring(s.indexOf("[") + 1, s.indexOf("]"));
-                s = s.replace("\n", delimiter);
+                for (int i = 0; i < s.length(); i++)
+                {
+                    if (s.charAt(i) == s.charAt(s.indexOf("[")))
+                    {
+                        delimiter += enclose(String.valueOf(s.charAt(i + 1)));
+                        delimiter += "|";
+                    }
+                }
+                delimiter = delimiter.substring(0,delimiter.length() - 1);
+                s = s.replace('\n', delimiter.charAt(2));
             }
-            split = s.split(Pattern.quote(delimiter));
+            split = split[1].split(delimiter);
         }
 
         for (int i = 0; i < split.length; i++) {
@@ -25,8 +39,10 @@ public class StringCalculator {
                 if (Integer.parseInt(split[i]) < 1000) {
                     if (Integer.parseInt(split[i]) > 0)
                         total += Integer.parseInt(split[i]);
-                    else
+                    else {
                         negativeNumbers += split[i] + " ";
+                        System.out.println(negativeNumbers);
+                    }
                 }
             } catch (NumberFormatException e) {
                 e.printStackTrace();

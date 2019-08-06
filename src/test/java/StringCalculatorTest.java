@@ -92,4 +92,25 @@ public class StringCalculatorTest {
         int result = calculator.add("//[***]\n1***2***3");
         Assert.assertEquals(6, result);
     }
+
+    @Test
+    public void multipleDelimiters() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("//[*][%]\n1*2%3");
+        Assert.assertEquals(6, result);
+    }
+
+    @Test
+    public void multipleLongDelimiters() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("//[***][#][%]\n1***2#3%4");
+        Assert.assertEquals(10, result);
+    }
+
+    @Test
+    public void numberDelimiters() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("//[*1*][%]\n1*1*2%3");
+        Assert.assertEquals(6, result);
+    }
 }
