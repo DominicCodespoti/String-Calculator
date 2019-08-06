@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="32057a59-31ee-419f-9dd8-203f134be474" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/StringCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StringCalculator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/StringCalculatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StringCalculatorTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="32057a59-31ee-419f-9dd8-203f134be474" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -35,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/StringCalculatorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="92" selection-start-line="92" selection-end-line="92" />
+            <state relative-caret-position="149">
+              <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -284,7 +281,7 @@
       <workItem from="1564975459557" duration="97000" />
       <workItem from="1564981275316" duration="1976000" />
       <workItem from="1565043506603" duration="6325000" />
-      <workItem from="1565051726906" duration="2511000" />
+      <workItem from="1565051726906" duration="2684000" />
     </task>
     <servers />
   </component>
@@ -321,7 +318,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19410000" />
+    <option name="totallyTimeSpent" value="19583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="949" extended-state="0" />
@@ -453,8 +450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/StringCalculatorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="149">
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
