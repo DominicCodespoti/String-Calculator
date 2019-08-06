@@ -1,29 +1,33 @@
+import java.util.regex.Pattern;
+
 public class StringCalculator {
 
     public int add(String s) {
         if (s.equals(""))
             return 0;
 
+        int total = 0;
         String delimiter = "";
         String[] split = s.split(",|\n");
-        String negativeNumbers = "";
+        String negativeNumbers = "Error, negative numbers detected: ";
 
         if (s.contains("//")) {
-            delimiter = String.valueOf(s.charAt(2));
-            split = s.split(",|\n|" + delimiter);
+            if (s.contains("["))
+            {
+                delimiter = s.substring(s.indexOf("[") + 1, s.indexOf("]"));
+                s = s.replace("\n", delimiter);
+            }
+            split = s.split(Pattern.quote(delimiter));
         }
-
-        for (String e : split
-        ) {
-            if (Integer.parseInt(e) < 0)
-                negativeNumbers += e + ", ";
-        }
-
-        int total = 0;
 
         for (int i = 0; i < split.length; i++) {
             try {
-                total += Integer.parseInt(split[i]);
+                if (Integer.parseInt(split[i]) < 1000) {
+                    if (Integer.parseInt(split[i]) > 0)
+                        total += Integer.parseInt(split[i]);
+                    else
+                        negativeNumbers += split[i] + " ";
+                }
             } catch (NumberFormatException e) {
                 e.printStackTrace();
             }

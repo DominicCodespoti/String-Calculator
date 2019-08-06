@@ -75,7 +75,21 @@ public class StringCalculatorTest {
     @Test
     public void oneAndTwoAndThreeWithNegatives() {
         StringCalculator calculator = new StringCalculator();
-        int result = calculator.add("//;\n1;2");
-        Assert.asse;
+        int result = calculator.add("-1,2,-3");
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void ignoreOverThousands() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("1000,1001,2");
+        Assert.assertEquals(2, result);
+    }
+
+    @Test
+    public void longDelimiters() {
+        StringCalculator calculator = new StringCalculator();
+        int result = calculator.add("//[***]\n1***2***3");
+        Assert.assertEquals(6, result);
     }
 }
