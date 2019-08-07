@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2019-08-06T04:50:18" hostname="C02Y308YJG5J" time="0.016">
+<testsuite name="StringCalculatorTest" tests="16" skipped="0" failures="0" errors="0" timestamp="2019-08-07T00:22:58" hostname="C02Y308YJG5J" time="0.018">
   <properties/>
   <testcase name="emptyStringReturnsZero" classname="StringCalculatorTest" time="0.001"/>
   <testcase name="longDelimiters" classname="StringCalculatorTest" time="0.0"/>
   <testcase name="oneAndTwoWithDelimitersReturnThree" classname="StringCalculatorTest" time="0.009"/>
   <testcase name="multipleLongDelimiters" classname="StringCalculatorTest" time="0.001"/>
   <testcase name="threeReturnsThree" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="oneAndTwoAndThreeReturnsSix" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="oneAndTwoAndThreeReturnsSix" classname="StringCalculatorTest" time="0.001"/>
   <testcase name="threeAndFiveAndThreeAndNineReturnTwenty" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="oneAndTwoAndThreeWithNegatives" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="multipleDelimiters" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="oneAndTwoAndThreeWithNegatives" classname="StringCalculatorTest" time="0.001"/>
+  <testcase name="multipleDelimiters" classname="StringCalculatorTest" time="0.0"/>
   <testcase name="oneAndTwoReturnsThree" classname="StringCalculatorTest" time="0.0"/>
   <testcase name="oneReturnsOne" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="ignoreOverThousands" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="ignoreOverThousands" classname="StringCalculatorTest" time="0.001"/>
   <testcase name="threeAndFiveReturnEight" classname="StringCalculatorTest" time="0.0"/>
   <testcase name="oneAndTwoAndNewlineAndThreeReturnSix" classname="StringCalculatorTest" time="0.0"/>
   <testcase name="threeAndNewlineAndFiveAndNewlineAndThreeAndNineReturnTwenty" classname="StringCalculatorTest" time="0.0"/>
-  <testcase name="numberDelimiters" classname="StringCalculatorTest" time="0.0"/>
+  <testcase name="numberDelimiters" classname="StringCalculatorTest" time="0.001"/>
   <system-out><![CDATA[Error, negative numbers detected: -1 
 Error, negative numbers detected: -1 -3 
 ]]></system-out>
