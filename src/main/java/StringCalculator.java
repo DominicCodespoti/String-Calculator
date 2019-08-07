@@ -24,7 +24,15 @@ public class StringCalculator {
                 {
                     if (s.charAt(i) == s.charAt(s.indexOf("[")))
                     {
-                        delimiter += enclose(String.valueOf(s.charAt(i + 1)));
+                        int test = 1;
+                        String multiLimiter = "";
+                        while (s.charAt(i + test) != s.charAt(s.indexOf("]")))
+                        {
+                            multiLimiter += s.charAt(i + test);
+                            test++;
+                        }
+                        //delimiter += enclose(String.valueOf(s.charAt(i + 1)));
+                        delimiter += enclose(multiLimiter);
                         delimiter += "|";
                     }
                 }
